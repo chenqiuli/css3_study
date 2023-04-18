@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: rebeccapurple;
+        transition: all 2s linear 2s;
+        /*
+        transition对所有属性都可，除了display：none/block;
+        transition加在谁身上，想让谁有动画效果就加谁身上；
+        transition-property: all - 过渡的属性，all代表所有，单独写独一个属性，如：height
+        transition-duration: 2s 动画持续时间
+        transition-timing-function: linear 动画曲线类型
+        transition-delay: 2s 延迟时间，一般不用
+        */
+      }
+      div:hover {
+        width: 200px;
+        height: 200px;
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

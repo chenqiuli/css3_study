@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: aqua;
+      animation: mymove 10s linear infinite;
+    }
+    /* 第一种写法，from 和 to是固定的 */
+    /* @keyframes mymove {
+      from {
+        width: 100px;
+        height: 100px;
+      }
+      to {
+        width: 300px;
+        height: 300px;
+      }
+    } */
+    /* 第二种写法，拆分百分点，百分点不是固定的 */
+    @keyframes mymove {
+      0% {
+        width: 100px;
+        height: 200px;
+        background-color: aqua;
+      }
+      25% {
+        width: 200px;
+        height: 200px;
+        background-color: burlywood;
+      }
+      50% {
+        width: 200px;
+        height: 300px;
+        background-color: palevioletred;
+      }
+      75% {
+        width: 300px;
+        height: 300px;
+        background-color: lightgreen;
+      }
+      100% {
+        width: 400px;
+        height: 400px;
+        background-color: red;
+      }
+    }
+  </style>
+  <body>
+    <!-- 
+      transition是需要触发一个事件（hover...）才会执行动画
+      animation不需要，可以自动执行动画
+    -->
+    <div>11</div>
+  </body>
+</html>
