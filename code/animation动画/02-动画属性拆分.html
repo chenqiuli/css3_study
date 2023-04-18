@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+        animation-name: mymove;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        /*
+        animation-direction：
+            normal：正常方向
+            reserve：反方向
+            alternate：正向交替
+            alternate-reverse：反向交替
+        */
+      }
+      div:hover {
+        /* 鼠标一进去动画暂停，一般配合hover使用 */
+        animation-play-state: paused;
+      }
+
+      @keyframes mymove {
+        from {
+          width: 200px;
+          height: 200px;
+          background-color: aqua;
+        }
+        to {
+          width: 400px;
+          height: 400px;
+          background-color: blueviolet;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
